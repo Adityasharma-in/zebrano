@@ -1,0 +1,53 @@
+/* ============================================================
+   ZEBRANO INTERIORS — design tokens
+   Dark "zebrano" espresso world · cinnabar accent · bone ink
+   See ../docs/DESIGN.md for the direction contract
+   ============================================================ */
+
+:root {
+  /* ground */
+  --ink-950: #12100a;
+  --ink-900: #1b140c;
+  --ink-800: #241b11;
+  --ink-700: #33281a;
+  --ink-600: #443723;
+
+  /* ink / text */
+  --bone-50: #f4ebd9;
+  --bone-200: #e3d6be;
+  --stone-400: #b3a48c;   /* ≥4.5:1 on ink-900 */
+
+  /* accents */
+  --cinnabar-400: #e57a52;
+  --cinnabar-500: #e0653f;
+  --cinnabar-700: #a63b24; /* text-on-bone ≥4.5:1 */
+  --brass-400: #c1954e;
+
+  /* bone pacing band */
+  --bone-surface: #efe4cd;
+  --bone-ink: #241b11;
+  --bone-stone: #6b5d46;
+
+  /* lines & texture */
+  --hairline: rgba(244, 235, 217, 0.14);
+  --hairline-soft: rgba(244, 235, 217, 0.08);
+  --grain-line: rgba(244, 235, 217, 0.06);
+
+  /* type */
+  --font-display: 'Gloock', Georgia, 'Times New Roman', serif;
+  --font-body: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', monospace;
+
+  /* layout */
+  --pad: clamp(20px, 4vw, 64px);
+  --gutter: clamp(16px, 2.4vw, 28px);
+  --section: clamp(96px, 11vw, 168px);
+  --radius: 2px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.45s;
+
+  /* chrome */
+  --header-h: 76px;
+}
