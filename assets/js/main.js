@@ -29,8 +29,7 @@
         gsap.timeline()
           .fromTo('.pre-strip::after', { xPercent: -100 }, { xPercent: 0, duration: 0.9, ease: 'power2.inOut' }, 0.15)
           .fromTo('.pre-mark', { scale: 0.72, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: 'power3.out' }, 0.2)
-          .set(Array.prototype.slice.call(letters), { yPercent: 115 })
-          .to(Array.prototype.slice.call(letters), { yPercent: 0, duration: 0.7, stagger: 0.05, ease: 'power3.out' }, 0.3)
+          .fromTo(Array.prototype.slice.call(letters), { yPercent: 115 }, { yPercent: 0, duration: 0.7, stagger: 0.05, ease: 'power3.out' }, 0.3)
           .to(pre, { yPercent: -100, duration: 0.7, ease: 'power4.inOut', onComplete: kill }, 1.15);
       } else {
         setTimeout(kill, 250);
