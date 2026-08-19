@@ -59,6 +59,12 @@
     body.querySelectorAll('.menu a').forEach(function (a) {
       a.addEventListener('click', function () { body.classList.remove('nav-open'); });
     });
+    body.querySelectorAll('[data-menu-close]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') body.classList.remove('nav-open');
     });
