@@ -87,6 +87,12 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+    /* failsafe: content must never stay hidden if the observer misses */
+    setTimeout(function () {
+      Array.prototype.forEach.call(els, function (el) {
+        if (!el.classList.contains('revealed')) el.classList.add('revealed');
+      });
+    }, 2200);
   }
 
   /* ---------- counters ---------- */
